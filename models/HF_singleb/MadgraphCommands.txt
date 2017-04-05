@@ -1,0 +1,30 @@
+A possible production configuration is:
+
+set group\_subprocesses Auto
+set ignore\_six\_quark\_processes False
+set gauge unitary
+set complex\_mass\_scheme False
+import model DM\_Bflavored --modelname
+define p = g u c d s u~ c~ d~ s~ b b~
+define j = g u c d s u~ c~ d~ s~
+define l+ = e+ mu+
+define l- = e- mu-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+generate p p > n1 n1~ b b~
+add process p p > n1 n1~ b
+add process p p > n1 n1~ b~
+
+output bFDM
+launch
+set MX 200
+set Mphix 1000
+set gx 1
+set maxjetflavor 5
+set pdlabel cteq6l1
+set ebeam1 6500
+set ebeam2 6500
+set nevents 20000
+set htjmin 180
+set wphix auto
+

@@ -1,0 +1,38 @@
+##
+import model sm
+import model EWModel_FermionDM_UFO
+define ll+ = e+ mu+ #ta+
+define ll- = e- mu- #ta-
+
+## mono-Z
+#generate p p > z x x~, z > ll+ ll-
+
+## mono-Photon
+#generate p p > a x x~
+
+## mono-W
+#generate p p > w+ x x~, w+ > ll+ vl
+#add process p p > w- x x~, w- > ll- vl~
+
+output EWK_Test
+
+launch
+
+set run_card ebeam1 6500
+set run_card ebeam2 6500
+#############################
+#set run_card pdlabel lhapdf
+#set run_card lhaid 21000
+#set run_card lhaid 90800
+############################
+set run_card nevents 50000
+set param_card mx 50
+set param_card k1 1
+set param_card k2 1
+set param_card lambdawimp 3000
+############################
+set param_card cS 1  ## scalar coupling
+set param_card cP 0  ## pseudo-scalar coupling
+###########################
+#set run_card drll 0
+###########################

@@ -1,0 +1,4 @@
+When generating the Higgs+MET processes using the dimension 8 operator, it is necessary to set $QED=3$ in the Madgraph command line:
+
+
+generatepp>hxx QED=3,h>bb

@@ -1,0 +1,91 @@
+# This file was automatically created by FeynRules 2.0.31
+# Mathematica version: 9.0 for Mac OS X x86 (64-bit) (November 20, 2012)
+# Date: Wed 3 Jun 2015 14:26:09
+
+
+# 
+# This is the logfile for the model Ma
+
+# Authors: Many
+# Model version: 1.0
+# Checking the Quantum numbers
+   * Electric charge defined.
+# Checking the Lagrangians
+   * All Lagrangians are ok.
+#
+# Particle definitions
+#
+
+   * No particles removed. All particles correspond to GenInt setup.
+
+# Automatically assigned PDG numbers
+   * Assigned PDG number 9000001 to particle ghA
+   * Assigned PDG number 9000002 to particle ghZ
+   * Assigned PDG number 9000003 to particle ghWp
+   * Assigned PDG number 9000004 to particle ghWm
+   * Assigned PDG number 9000005 to particle ghG
+   * Assigned PDG number 9000006 to particle EtaD
+   * Assigned PDG number 9000007 to particle EtaU
+   * Assigned PDG number 9000008 to particle EtaS
+   * Assigned PDG number 9000009 to particle EtaC
+   * Assigned PDG number 9000010 to particle EtaB
+   * Assigned PDG number 9000011 to particle EtaT
+   * Assigned PDG number 9000012 to particle Eta0
+   * Assigned PDG number 9000013 to particle EtaP
+   * Assigned PDG number 9000014 to particle Chi
+
+
+# Compulsory PDG codes:
+   * Class SM leptons complete.
+   * Class SM neutrinos complete.
+   * Class SM quarks complete.
+   * Class SM gauge bosons complete.
+#
+# Parameter definitions
+#
+
+   * All parameters are ok.
+
+
+# Vertices
+   * Calling FeynmanRules for 2 Lagrangians.
+   * Number of classes vertices: 136
+   * Number of flavored vertices: 180
+   * Saved vertices in InterfaceRun[ 1 ].
+   * Checked QNumber conservation.
+      - Quantum number GhostNumber conserved in all vertices.
+      - Quantum number LeptonNumber conserved in all vertices.
+      - Quantum number Q conserved in all vertices.
+      - Quantum number Y conserved in all vertices.
+   * particles.py written.
+   * parameters.py written.
+#
+# Vertex definitions
+#
+
+   * 180 vertices written.
+   * vertices.py written.
+#
+# Lorentz structure definitions
+#
+
+   * 20 lorentz structures written.
+   * lorentz.py written.
+#
+# Coupling definitions
+#
+
+   * 81 couplings written.
+   * couplings.py written.
+#
+# Coupling order definitions
+#
+
+   * 0 couplings orders written.
+   * coupling_orders.py written.
+#
+# Decay definitions
+#
+
+   * 21 decays written.
+   * decay.py not written
