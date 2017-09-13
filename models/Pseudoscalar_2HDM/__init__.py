@@ -44,5 +44,5 @@ gauge = [0, 1]
 
 
 __author__ = "M. Bauer, U. Haisch and F. Kahlhoefer"
-__date__ = "29. 1. 2017"
-__version__= "1.0"
+__date__ = "11. 9. 2017"
+__version__= "2.0"

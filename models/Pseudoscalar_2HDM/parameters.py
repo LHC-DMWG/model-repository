@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.13
 # Mathematica version: 9.0 for Mac OS X x86 (64-bit) (November 20, 2012)
-# Date: Sun 29 Jan 2017 13:58:13
+# Date: Mon 11 Sep 2017 14:35:03
 
 
 
@@ -90,6 +90,38 @@ aS = Parameter(name = 'aS',
                lhablock = 'SMINPUTS',
                lhacode = [ 3 ])
 
+ymdo = Parameter(name = 'ymdo',
+                 nature = 'external',
+                 type = 'real',
+                 value = 0.00504,
+                 texname = '\\text{ymdo}',
+                 lhablock = 'YUKAWA',
+                 lhacode = [ 1 ])
+
+ymup = Parameter(name = 'ymup',
+                 nature = 'external',
+                 type = 'real',
+                 value = 0.00255,
+                 texname = '\\text{ymup}',
+                 lhablock = 'YUKAWA',
+                 lhacode = [ 2 ])
+
+yms = Parameter(name = 'yms',
+                nature = 'external',
+                type = 'real',
+                value = 0.101,
+                texname = '\\text{yms}',
+                lhablock = 'YUKAWA',
+                lhacode = [ 3 ])
+
+ymc = Parameter(name = 'ymc',
+                nature = 'external',
+                type = 'real',
+                value = 1.27,
+                texname = '\\text{ymc}',
+                lhablock = 'YUKAWA',
+                lhacode = [ 4 ])
+
 ymb = Parameter(name = 'ymb',
                 nature = 'external',
                 type = 'real',
@@ -105,6 +137,22 @@ ymt = Parameter(name = 'ymt',
                 texname = '\\text{ymt}',
                 lhablock = 'YUKAWA',
                 lhacode = [ 6 ])
+
+yme = Parameter(name = 'yme',
+                nature = 'external',
+                type = 'real',
+                value = 0.000511,
+                texname = '\\text{yme}',
+                lhablock = 'YUKAWA',
+                lhacode = [ 11 ])
+
+ymm = Parameter(name = 'ymm',
+                nature = 'external',
+                type = 'real',
+                value = 0.10566,
+                texname = '\\text{ymm}',
+                lhablock = 'YUKAWA',
+                lhacode = [ 13 ])
 
 ymtau = Parameter(name = 'ymtau',
                   nature = 'external',
@@ -138,6 +186,22 @@ MZ = Parameter(name = 'MZ',
                lhablock = 'MASS',
                lhacode = [ 23 ])
 
+Me = Parameter(name = 'Me',
+               nature = 'external',
+               type = 'real',
+               value = 0.000511,
+               texname = '\\text{Me}',
+               lhablock = 'MASS',
+               lhacode = [ 11 ])
+
+MMU = Parameter(name = 'MMU',
+                nature = 'external',
+                type = 'real',
+                value = 0.10566,
+                texname = '\\text{MMU}',
+                lhablock = 'MASS',
+                lhacode = [ 13 ])
+
 MTA = Parameter(name = 'MTA',
                 nature = 'external',
                 type = 'real',
@@ -146,6 +210,22 @@ MTA = Parameter(name = 'MTA',
                 lhablock = 'MASS',
                 lhacode = [ 15 ])
 
+MU = Parameter(name = 'MU',
+               nature = 'external',
+               type = 'real',
+               value = 0.00255,
+               texname = 'M',
+               lhablock = 'MASS',
+               lhacode = [ 2 ])
+
+MC = Parameter(name = 'MC',
+               nature = 'external',
+               type = 'real',
+               value = 1.27,
+               texname = '\\text{MC}',
+               lhablock = 'MASS',
+               lhacode = [ 4 ])
+
 MT = Parameter(name = 'MT',
                nature = 'external',
                type = 'real',
@@ -153,6 +233,22 @@ MT = Parameter(name = 'MT',
                texname = '\\text{MT}',
                lhablock = 'MASS',
                lhacode = [ 6 ])
+
+MD = Parameter(name = 'MD',
+               nature = 'external',
+               type = 'real',
+               value = 0.00504,
+               texname = '\\text{MD}',
+               lhablock = 'MASS',
+               lhacode = [ 1 ])
+
+MS = Parameter(name = 'MS',
+               nature = 'external',
+               type = 'real',
+               value = 0.101,
+               texname = '\\text{MS}',
+               lhablock = 'MASS',
+               lhacode = [ 3 ])
 
 MB = Parameter(name = 'MB',
                nature = 'external',
@@ -496,6 +592,36 @@ yb = Parameter(name = 'yb',
                value = '(ymb*cmath.sqrt(2))/vev',
                texname = '\\text{yb}')
 
+yc = Parameter(name = 'yc',
+               nature = 'internal',
+               type = 'real',
+               value = '(ymc*cmath.sqrt(2))/vev',
+               texname = '\\text{yc}')
+
+ydo = Parameter(name = 'ydo',
+                nature = 'internal',
+                type = 'real',
+                value = '(ymdo*cmath.sqrt(2))/vev',
+                texname = '\\text{ydo}')
+
+ye = Parameter(name = 'ye',
+               nature = 'internal',
+               type = 'real',
+               value = '(yme*cmath.sqrt(2))/vev',
+               texname = '\\text{ye}')
+
+ym = Parameter(name = 'ym',
+               nature = 'internal',
+               type = 'real',
+               value = '(ymm*cmath.sqrt(2))/vev',
+               texname = '\\text{ym}')
+
+ys = Parameter(name = 'ys',
+               nature = 'internal',
+               type = 'real',
+               value = '(yms*cmath.sqrt(2))/vev',
+               texname = '\\text{ys}')
+
 yt = Parameter(name = 'yt',
                nature = 'internal',
                type = 'real',
@@ -508,11 +634,41 @@ ytau = Parameter(name = 'ytau',
                  value = '(ymtau*cmath.sqrt(2))/vev',
                  texname = '\\text{ytau}')
 
+yup = Parameter(name = 'yup',
+                nature = 'internal',
+                type = 'real',
+                value = '(ymup*cmath.sqrt(2))/vev',
+                texname = '\\text{yup}')
+
+I1a11 = Parameter(name = 'I1a11',
+                  nature = 'internal',
+                  type = 'complex',
+                  value = '(tanbeta*ymdo*cmath.sqrt(2))/vev',
+                  texname = '\\text{I1a11}')
+
+I1a22 = Parameter(name = 'I1a22',
+                  nature = 'internal',
+                  type = 'complex',
+                  value = '(tanbeta*yms*cmath.sqrt(2))/vev',
+                  texname = '\\text{I1a22}')
+
 I1a33 = Parameter(name = 'I1a33',
                   nature = 'internal',
                   type = 'complex',
                   value = '(tanbeta*ymb*cmath.sqrt(2))/vev',
                   texname = '\\text{I1a33}')
+
+I2a11 = Parameter(name = 'I2a11',
+                  nature = 'internal',
+                  type = 'complex',
+                  value = '-((ymup*cmath.sqrt(2))/(tanbeta*vev))',
+                  texname = '\\text{I2a11}')
+
+I2a22 = Parameter(name = 'I2a22',
+                  nature = 'internal',
+                  type = 'complex',
+                  value = '-((ymc*cmath.sqrt(2))/(tanbeta*vev))',
+                  texname = '\\text{I2a22}')
 
 I2a33 = Parameter(name = 'I2a33',
                   nature = 'internal',
@@ -520,11 +676,35 @@ I2a33 = Parameter(name = 'I2a33',
                   value = '-((ymt*cmath.sqrt(2))/(tanbeta*vev))',
                   texname = '\\text{I2a33}')
 
+I3a11 = Parameter(name = 'I3a11',
+                  nature = 'internal',
+                  type = 'complex',
+                  value = '-((ymup*cmath.sqrt(2))/(tanbeta*vev))',
+                  texname = '\\text{I3a11}')
+
+I3a22 = Parameter(name = 'I3a22',
+                  nature = 'internal',
+                  type = 'complex',
+                  value = '-((ymc*cmath.sqrt(2))/(tanbeta*vev))',
+                  texname = '\\text{I3a22}')
+
 I3a33 = Parameter(name = 'I3a33',
                   nature = 'internal',
                   type = 'complex',
                   value = '-((ymt*cmath.sqrt(2))/(tanbeta*vev))',
                   texname = '\\text{I3a33}')
+
+I4a11 = Parameter(name = 'I4a11',
+                  nature = 'internal',
+                  type = 'complex',
+                  value = '(tanbeta*ymdo*cmath.sqrt(2))/vev',
+                  texname = '\\text{I4a11}')
+
+I4a22 = Parameter(name = 'I4a22',
+                  nature = 'internal',
+                  type = 'complex',
+                  value = '(tanbeta*yms*cmath.sqrt(2))/vev',
+                  texname = '\\text{I4a22}')
 
 I4a33 = Parameter(name = 'I4a33',
                   nature = 'internal',
@@ -532,11 +712,35 @@ I4a33 = Parameter(name = 'I4a33',
                   value = '(tanbeta*ymb*cmath.sqrt(2))/vev',
                   texname = '\\text{I4a33}')
 
+I5a11 = Parameter(name = 'I5a11',
+                  nature = 'internal',
+                  type = 'complex',
+                  value = 'ydo',
+                  texname = '\\text{I5a11}')
+
+I5a22 = Parameter(name = 'I5a22',
+                  nature = 'internal',
+                  type = 'complex',
+                  value = 'ys',
+                  texname = '\\text{I5a22}')
+
 I5a33 = Parameter(name = 'I5a33',
                   nature = 'internal',
                   type = 'complex',
                   value = 'yb',
                   texname = '\\text{I5a33}')
+
+I6a11 = Parameter(name = 'I6a11',
+                  nature = 'internal',
+                  type = 'complex',
+                  value = 'yup',
+                  texname = '\\text{I6a11}')
+
+I6a22 = Parameter(name = 'I6a22',
+                  nature = 'internal',
+                  type = 'complex',
+                  value = 'yc',
+                  texname = '\\text{I6a22}')
 
 I6a33 = Parameter(name = 'I6a33',
                   nature = 'internal',
@@ -544,11 +748,35 @@ I6a33 = Parameter(name = 'I6a33',
                   value = 'yt',
                   texname = '\\text{I6a33}')
 
+I7a11 = Parameter(name = 'I7a11',
+                  nature = 'internal',
+                  type = 'complex',
+                  value = 'yup',
+                  texname = '\\text{I7a11}')
+
+I7a22 = Parameter(name = 'I7a22',
+                  nature = 'internal',
+                  type = 'complex',
+                  value = 'yc',
+                  texname = '\\text{I7a22}')
+
 I7a33 = Parameter(name = 'I7a33',
                   nature = 'internal',
                   type = 'complex',
                   value = 'yt',
                   texname = '\\text{I7a33}')
+
+I8a11 = Parameter(name = 'I8a11',
+                  nature = 'internal',
+                  type = 'complex',
+                  value = 'ydo',
+                  texname = '\\text{I8a11}')
+
+I8a22 = Parameter(name = 'I8a22',
+                  nature = 'internal',
+                  type = 'complex',
+                  value = 'ys',
+                  texname = '\\text{I8a22}')
 
 I8a33 = Parameter(name = 'I8a33',
                   nature = 'internal',

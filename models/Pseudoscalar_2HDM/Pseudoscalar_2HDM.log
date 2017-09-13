@@ -1,13 +1,13 @@
 # This file was automatically created by FeynRules 2.3.13
 # Mathematica version: 9.0 for Mac OS X x86 (64-bit) (November 20, 2012)
-# Date: Sun 29 Jan 2017 13:56:19
+# Date: Mon 11 Sep 2017 14:33:11
 
 
 # 
-# This is the logfile for the model 2HDMPZ2II
+# This is the logfile for the model Pseudoscalar_2HDM
 
 # Authors: M. Bauer, U. Haisch and F. Kahlhoefer
-# Model version: 1.0
+# Model version: 2.0
 # Checking the Quantum numbers
    * Electric charge defined.
 # Checking the Lagrangians
@@ -39,8 +39,8 @@
 
 # Vertices
    * Calling FeynmanRules for 1 Lagrangians.
-   * Number of classes vertices: 201
-   * Number of flavored vertices: 332
+   * Number of classes vertices: 229
+   * Number of flavored vertices: 378
    * Saved vertices in InterfaceRun[ 1 ].
    * Checked QNumber conservation.
       - Quantum number GhostNumber conserved in all vertices.
@@ -53,19 +53,19 @@
 # Vertex definitions
 #
 
-   * 322 vertices written.
+   * 364 vertices written.
    * vertices.py written.
 #
 # Lorentz structure definitions
 #
 
-   * 36 lorentz structures written.
+   * 38 lorentz structures written.
    * lorentz.py written.
 #
 # Coupling definitions
 #
 
-   * 254 couplings written.
+   * 309 couplings written.
    * couplings.py written.
 #
 # Coupling order definitions
@@ -77,17 +77,17 @@
 # Decay definitions
 #
 
-   * 10 decays written.
+   * 16 decays written.
    * decay.py not written
 #
 # CTCoupling definitions
 #
 
-   * 187 CTcouplings written.
+   * 360 CTcouplings written.
    * CT_couplings.py written.
 #
 # CTVertex definitions
 #
 
-   * 111 CTvertices written.
+   * 171 CTvertices written.
    * CT_vertices.py written.

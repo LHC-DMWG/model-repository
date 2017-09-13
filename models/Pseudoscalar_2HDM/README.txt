@@ -1,3 +1,7 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++  README v1 +++++++++++++++++++++++++++++++ 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 This UFO file contains an implementation of the Two Higgs Doublet Model (THDM) plus pseudoscalar extension described in arXiv:1701.07427.
 The implemented Yukawa sector is of type II. The UFO implementation can be used with MadGraph5_aMC@NLO available at https://launchpad.net/mg5amcnlo.
 
@@ -51,4 +55,104 @@ In case of questions etc. please write to one of the authors of arXiv:1701.07427
 bauer@thphys.uni-heidelberg.de
 ulrich.haisch@physics.ox.ac.uk
 felix.kahlhoefer@desy.de
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++  README v2 +++++++++++++++++++++++++++++++  
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Below we give the MadGraph syntax used to generate various mono-X signals using version 2
+of the Pseudoscalar_2HDM UFO. 
+
+To generate mono-jet events one uses the following commands:
+
+import model Pseudoscalar_2HDM
+
+generate p p > j xd xd~ [QCD]
+
+The result is leading order (LO) accurate and involves contribution from both top and bottom 
+loops. Both the top and bottom quarks are massive and the corresponding Yukawa couplings 
+are non-zero. The calculation is thus performed in a four flavour scheme (4FS).
+
+Using 
+
+generate p p > t t~ xd xd~ [QCD]
+
+generates a ttbar plus missing energy (MET) signal. Next-to-leading order (NLO) corrections are 
+included via [QCD] and the 4FS is employed. 
+
+Likewise
+
+generate p p > b b~ xd xd~ [QCD]
+
+produces bbbar plus MET events with NLO accuracy. Again the 4FS is used meaning that 
+contributions from initial-state bottom quarks are not present. 
+
+The UFO is however also able to simulate processes in the five flavour scheme (5FS). 
+For instance the relevant commands to produce a bbbar plus MET signal at NLO are 
+
+import model Pseudoscalar_2HDM-bbMET_5FS 
+
+generate p p > j j xd xd~ [QCD]
+
+In this case only the top quark is massive while the bottom quark is massless and thus 
+can appear as a parton in the colliding protons. Both the top and bottom Yukawa coupling 
+are however non-zero. 
+
+To generate a mono-W signal arising from the exchange of a charged Higgs one also has 
+to include non-zero light Yukawa couplings. The appropriate commands are 
+
+import model Pseudoscalar_2HDM-WMET
+
+generate p p > w+ xd xd~ [QCD]
+
+In such a case only the top quark is massive while all the other quarks are treated as massless.
+All Yukawa couplings are however non-zero. The calculation can again be performed at NLO. 
+
+To calculate the relic density one should use 
+
+import model Pseudoscalar_2HDM-relic
+
+In this case all fermion masses and Yukawa couplings are non-zero.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++  KNOWN ISSUES ++++++++++++++++++++++++++++++ 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+There is one known issue with the UFO. As explained in 
+
+https://answers.launchpad.net/mg5amcnlo/+question/657910
+
+in the case of bbbar plus MET production in the 5FS, MadGraph can stop because some
+collinear tests fail.
+
+To circumvent this problem the parameter
+
+max_fail
+
+as declared and defined in line 21 and 22 of the file
+
+test_soft_col_limits.f
+
+(or symmetry_fks_test_ME.f in older MadGraph versions) in the directory
+
+SubProcesses
+
+should be increased from 0.3 to a value of around 0.5.
+
+Further details on the above issue can be found in
+
+https://answers.launchpad.net/mg5amcnlo/+question/657910
+
+In case of questions conerning version 2 of the UFO please write to
+
+ulrich.haisch@physics.ox.ac.uk
+
+
+
+
+
+
+
+
+
 
