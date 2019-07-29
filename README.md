@@ -6,4 +6,7 @@ https://arxiv.org/abs/1507.00966
 LHC Dark Matter Working Group: Next-generation spin-0 dark matter models
 https://arxiv.org/abs/1810.09420
 
-This is a clone of the Dark Matter Forum repository which was originally available at https://svnweb.cern.ch/cern/wsvn/LHCDMF/trunk/models/. 
+This is a clone of the Dark Matter Forum repository which was originally available at https://svnweb.cern.ch/cern/wsvn/LHCDMF/trunk/models/.
+
+Links to models that are made available publicly using other repositories:
+- DMSimp implementation of the s-channel axial / vector mediator model: http://feynrules.irmp.ucl.ac.be/wiki/DMsimp.
