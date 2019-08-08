@@ -12,6 +12,11 @@ Dark Matter Benchmark Models for Early LHC Run-2 Searches: Report of the ATLAS/C
 
 LHC Dark Matter Working Group: Next-generation spin-0 dark matter models: [arXiv:1810.09420](https://arxiv.org/abs/1810.09420)
 
+## t-channel White Paper Models
+
+A working directory containing UFOs of models with t-channel mediators studied in the LHC DM WG within the scope of the corresponding White Paper is availalbe [here](https://github.com/LHC-DMWG/model-repository/tree/master/t-channel_WP_work).
+
+
 ## Additional Information
 
 This is a clone of the Dark Matter Forum repository which was originally available [here](https://svnweb.cern.ch/cern/wsvn/LHCDMF/trunk/models/).
@@ -20,8 +25,8 @@ This is a clone of the Dark Matter Forum repository which was originally availab
 # External Models
 
 Links to models that are made available publicly using other repositories:
-- DMSimp implementation of the s-channel axial / vector mediator model: 
-  http://feynrules.irmp.ucl.ac.be/wiki/DMsimp.
+- DMSimp implementation of the s-channel axial / vector mediator model available in [this repository](http://feynrules.irmp.ucl.ac.be/wiki/DMsimp).
+
 
 
 
